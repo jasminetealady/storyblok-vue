@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="call-to-action">
         <p>{{blok.call_to_action_text}}</p>
-        <a :href="blok.call_to_action_button.url">Call To Action</a>
+        <a :href="blok.call_to_action_button.url" target="_blank">Call To Action</a>
       </div>
       <img :src="blok.call_to_action_image" />
     </div>
@@ -12,10 +12,7 @@
 
 <script>
 export default {
-  props: ['blok'],
-  mounted(){
-   debugger
-  }
+  props: ['blok']
 }
 </script>
 
