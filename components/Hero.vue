@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="call-to-action">
         <p>{{blok.call_to_action_text}}</p>
-        <a :href="blok.call_to_action_button">Call To Action</a>
+        <a :href="blok.call_to_action_button.url">Call To Action</a>
       </div>
       <img :src="blok.call_to_action_image" />
     </div>
@@ -14,12 +14,7 @@
 export default {
   props: ['blok'],
   mounted(){
-    console.log(this.blok)
-  },
-  methods: {
-    doThis(){
-      alert('Meow!')
-    }
+   debugger
   }
 }
 </script>
