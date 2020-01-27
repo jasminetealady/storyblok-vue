@@ -39,6 +39,7 @@ export default {
   },
   asyncData (context) {
     // Check if we are in the editing mode
+    debugger
     let editMode = false
 
     if (context.query._storyblok || context.isDev || (typeof window !== 'undefined' && window.localStorage.getItem('_storyblok_draft_mode'))) {
